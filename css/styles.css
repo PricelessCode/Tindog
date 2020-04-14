@@ -1,127 +1,174 @@
-body {
-    font-family: "Montserrat", sans-serif;
-}
+    body {
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+    }
 
-#title {
-    background-color: #ff4c68;
-    color: #fff;
-    height: 40%;
-}
+    h1, h2, h3, h4, h5 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+    }
+    
+    p {
+        color: #8f8f8f;
+    }
 
-h1 {
-    font-weight: 900;
-    font-size: 3.5rem;
-    line-height: 1.5;
-}
+    /* Headings */
 
-h2 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 2.4rem;
-    line-height: 1.5;
-    font-weight: bold;
-}
+    .big-heading {
+        font-weight: 900;
+        font-size: 3.5rem;
+        line-height: 1.5;
+        font-family: "Montserrat";
+    }
 
-h3 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 1.5rem;
-}
+    .section-heading {
+        font-size: 3rem;
+        line-height: 1.5;
+    }
 
-p {
-    color: 8f8f8f;
-}
+    /* Containers */
 
-.container-fluid {
-    padding: 3% 15%;
-}
+    .container-fluid {
+        padding: 7% 15%;
+    }
 
+    /* Sections */
 
-/* Navigation Bar */
+    .colored-section {
+        background-color: #ff4c68;
+        color: #fff;
+    }
 
-.navbar {
-    padding: 0 0 4.5rem;
-}
+    .white-section {
+        background-color: white;
+    }
+   
+    /* Navigation Bar */
+    
+    .navbar {
+        padding: 0 0 4.5rem;
+    }
+    
+    .navbar-brand {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    
+    .nav-item {
+        padding: 0 18px
+    }
+    
+    .nav-link {
+        font-size: 1.2rem;
+    }
 
-.navbar-brand {
-    font-family: "Ubuntu", sans-serif;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
+    .download-btn {
+        margin: 5% 3% 5% 0;
+    }
 
-.nav-item {
-    padding: 0 18px
-}
+    /* Title Section */
 
-.nav-link {
-    font-size: 1.2rem;
-}
+    #title .container-fluid {
+        padding: 3% 15% 7%;
+        text-align: left;
+    }
+    
+    .title-image {
+        width: 55%;
+        transform: rotate(25deg);
+        position: absolute;
+        right: 20%;
+    }
 
+    /* Features Section*/
+    
+    #features {
+        position: relative;
+    }
+    
+    .feature-title {
+        font-size: 1.5rem;
+    }
 
-/* Download Buttons */
+    .feature-box {
+        padding: 5%;
+    }
+    
+    .icon {
+        color: #ef8172;
+        margin-bottom: 1rem;
+    }
+    
+    .icon:hover {
+        color: #ff4c68;
+    }
+    /* Testimonial Section */
+    
+    #testimonials {
+        background-color: #ef8172;
+    }
 
-.download-btn {
-    margin: 5% 3% 5% 0;
-}
+    .testimonial-text {
+        font-size: 3rem;
+        line-height: 1.5;
+    }
+    
+    .testimonial-image {
+        width: 10%;
+        border-radius: 100%;
+        margin: 20px;
+    }
+    
+    .carousel-item {
+        padding: 7% 15%;
+    }
 
+    /* Press Section */
 
-/* Title Image */
+    #press {
+        padding-bottom: 3%;
+    }
+    
+    .press-logo {
+        width: 15%;
+        margin: 20px 20px 50px;
+    }
 
-.title-image {
-    width: 60%;
-    transform: rotate(25deg);
-}
+    /* Pricing Section */
+    
+    #pricing {
+        padding: 100px;
+    }
 
+    .price-text {
+        font-size: 3rem; 
+        line-height: 1.5;
+    }
+    
+    .pricing-column {
+        padding: 3% 2%;
+    }
 
-/* Features Section*/
+    
+    /* CTA Section */
+    
+    
 
-.feature-box {
-    text-align: center;
-    padding: 5%;
-}
-
-.icon {
-    color: #ef8172;
-    margin-bottom: 1rem;
-}
-
-.icon:hover {
-    color: #ff4c68;
-}
-
-
-/* Testimonial Section */
-
-#testimonials {
-    text-align: center;
-    background-color: #ef8172;
-    color: #fff;
-}
-
-.testimonial-image {
-    width: 10%;
-    border-radius: 100%;
-    margin: 20px;
-}
-
-.carousel-item {
-    padding: 7% 15%;
-}
-
-
-/* Press Section */
-
-#press {
-    background-color: #ef8172;
-    text-align: center;
-    padding-bottom: 3%;
-}
-
-.press-logo {
-    width: 15%;
-    margin: 20px 20px 50px;
-}
-
-
-/* Pricing Section */
-
-#pricing {}
+    /* Footer Section */
+    
+    .social-icon {
+        margin: 20px 10px;
+    }
+    /* Responsive website media queries */
+    
+    @media (max-width: 990px) {
+        #title {
+            text-align: center;
+        }
+        .title-image {
+            position: static;
+            /*static --> To make the image takes up space (putting back into the HTML space flow)*/
+            transform: rotate(0);
+        }
+    }
